@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .anim{
+            box-shadow: 10px 10px 40px rgba(0,0,0,.2);
+            padding: 0;
+            margin: 0;
+            display: none;
+            height: 200px;
+            width: 200px;
+            
+        }
+
+        p{
+            text-align: center;
+            font-family: 'Poppins';
+         
+        }
+    </style>
+
+</head>
+<body>
+    
+    <a href="#"> <p>Start Dawnload</p> </a>
+
+    <div class="anim">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_jlbgeewr.json"  background="#ffffff"  speed="1"  style="width: 200px; height: 200px;" hover loop autoplay></lottie-player></div>
+
+    <script>
+        let cta = document.querySelector('a');
+        let anim = document.querySelector('.anim');
+
+cta.addEventListener('click', ()=>{
+    anim.style.display = 'block';
+
+    setTimeout(() => {
+        anim.style.display = 'none';
+    },6500)
+})
+
+    </script>
+
+    
+</body>
+</html>
